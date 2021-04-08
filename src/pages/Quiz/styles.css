@@ -1,0 +1,27 @@
+:root {
+  --blue-color: hsl(217, 91%, 60%);
+  --blue-color-alt: hsl(217, 91%, 52%);
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  place-items: center;
+  place-content: center;
+  background-color: var(--blue-color);
+}
+
+.quiz-score {
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.btn-next-question {
+  margin-left: auto;
+  --background: var(--blue-color-alt);
+  --color: white;
+}
+

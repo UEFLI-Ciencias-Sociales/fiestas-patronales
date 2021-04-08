@@ -1,0 +1,23 @@
+.btn {
+  --color: #1a1a1a;
+  --background: #fcfcfc;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: var(--background);
+  color: var(--color);
+  border: 0;
+  outline: 0;
+  text-align: center;
+  font-weight: 700;
+  transition: opacity 250ms ease-in-out;
+}
+
+.btn.bg-white {
+  border-radius: 0.5rem;
+  --background: white;
+}
+
+.btn.block {
+  width: 100%;
+  display: block;
+}
