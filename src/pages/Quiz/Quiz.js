@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Button } from "../../components/Button";
 import { Loading } from "../../components/Loading";
 import { Questionaire } from "../../components/Questionaire";
+import { dataQuestions } from "../../data/questions";
+
+const MAX_QUESTION = 5;
+const alreadyIndexs = [0];
 
 export default function Quiz() {
   const [questions, setQuestions] = useState([]);
@@ -11,20 +15,17 @@ export default function Quiz() {
   const [showAnswer, setShowAnswer] = useState(false);
 
   useEffect(() => {
-    fetch(
-      "https://opentdb.com/api.php?amount=10&category=12&difficulty=easy&type=multiple"
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        setQuestions(data.results.map(question => ({
+    setTimeout(() => {
+      setQuestions(
+        dataQuestions.results.map((question) => ({
           ...question,
           answers: [
             question.correct_answer,
-            ...question.incorrect_answers
-          ].sort(() => Math.random() - 0.5)
-        })))
-      })
-      .catch((err) => console.error(err));
+            ...question.incorrect_answers,
+          ].sort(() => Math.random() - 0.5),
+        }))
+      );
+    }, 500);
   }, []);
 
   const handleAnswer = (answer) => {
@@ -41,12 +42,22 @@ export default function Quiz() {
     setEndQuiz(false);
     setScore(0);
     setCurrentIndex(0);
+    alreadyIndexs.length = 0
   };
 
   const handleNextQuestion = () => {
     setShowAnswer(false);
+    let newIndex;
 
-    setCurrentIndex(currentIndex + 1);
+    do {
+      newIndex = Math.round(Math.random() * questions.length);
+    } while (alreadyIndexs.includes(newIndex))
+    alreadyIndexs.push(newIndex)
+    setCurrentIndex(newIndex);
+
+    if (alreadyIndexs.length > MAX_QUESTION || alreadyIndexs.length > questions.length) {
+      setEndQuiz(true);
+    }
   };
 
   return (
@@ -54,12 +65,12 @@ export default function Quiz() {
       {endQuiz ? (
         <div>
           <div className="quiz-score">
-            Your score was {score}/{questions.length}
+            Your score was {score}/{MAX_QUESTION}
           </div>
-          <Button onClick={resetQuiz} block className="bg-white mb-1">
+          <Button onClick={resetQuiz} className="bg-white mb-1" block>
             Reset
           </Button>
-          <Button block className="bg-white">
+          <Button className="bg-white" block>
             Back to home
           </Button>
         </div>

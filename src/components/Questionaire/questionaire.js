@@ -32,7 +32,7 @@ export default function Questionaire({
         return <Button
           key={index}
           className={`${textColor} btn-questionaire`}
-          onClick={handleClick}
+          onClick={() => handleClick(answer)}
         >
           {answer}
         </Button>

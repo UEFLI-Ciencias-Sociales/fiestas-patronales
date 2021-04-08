@@ -34,13 +34,9 @@
 }
 
 .btn.correct {
-  --color: #11FF1E;
+  --color: hsl(90, 80%, 55%);
 }
 
 .btn.incorrect {
-  --color: red;
-}
-
-.btn.select {
-  --background: red;
+  --color: hsl(0, 90%, 66%);
 }
