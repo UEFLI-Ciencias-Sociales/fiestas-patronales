@@ -26,22 +26,23 @@ export default function Questionaire({
         {answers.map((answer, index) => {
           const textColor = showAnswer
             ? answer === correct_answer
-              ? 'correct'
-              : 'incorrect'
-            : undefined
+              ? 'text-green-500'
+              : 'text-red-500'
+            : 'text-blue-500'
 
-          const selected = showAnswer && index === buttonSelect ? 'selected' : undefined;
+          const selected = showAnswer && index === buttonSelect ? 'border-2 border-gray-800' : undefined;
         
         return <Button
+          disabled={showAnswer}
           key={index}
-          className={`${textColor} ${selected} btn-questionaire`}
+          className={`${textColor} ${selected} p-2 rounded-lg bg-white`}
           onClick={() => handleClick(answer,index)}
         >
           {answer}
         </Button>
 })}
       </div>
-      {showAnswer && <Button className="btn-next-question mt-1" onClick={handleNextQuestion}>
+      {showAnswer && <Button className="ml-auto bg-blue-400 p-2 mt-4" onClick={handleNextQuestion}>
         Next Question
       </Button>}
     </div>

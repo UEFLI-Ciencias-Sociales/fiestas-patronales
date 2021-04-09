@@ -1,0 +1,6 @@
+@media only screen and (min-width: 1200px) and (max-width: 1536px) {
+  .lg\:max-w-screen-1200 {
+    max-width: 1140px;
+    width: 100%;
+  }
+}
