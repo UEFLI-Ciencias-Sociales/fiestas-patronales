@@ -5,7 +5,7 @@ export default function Questionaire({
   handleNextQuestion,
   showAnswer,
   handleAnswer,
-  item=0,
+  buttonSelect,
   data: {
     question,
     correct_answer,
@@ -30,17 +30,16 @@ export default function Questionaire({
             ? answer === correct_answer
               ? 'correct'
               : 'incorrect'
-            : undefined 
+            : undefined
+
+          const selected = showAnswer && index === buttonSelect ? 'selected' : undefined;
         
         return <Button
           key={index}
-          className={`${textColor} btn-questionaire`}
-          onClick={() => {handleClick(answer,index);
-            // setMono(index);
-          }}
+          className={`${textColor} ${selected} btn-questionaire`}
+          onClick={() => handleClick(answer,index)}
         >
-          {answer} + index {index} + item {item} 
-          {/* + mono {mono} */}
+          {answer}
         </Button>
 })}
       </div>

@@ -1,6 +1,7 @@
 :root {
   --blue-color: hsl(217, 91%, 60%);
   --blue-color-alt: hsl(217, 91%, 52%);
+  --blue-color-alt2: hsl(217, 80%, 90%);
 }
 
 .quiz-container {
