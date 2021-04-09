@@ -13,6 +13,7 @@ export default function Quiz() {
   const [score, setScore] = useState(0);
   const [endQuiz, setEndQuiz] = useState(false);
   const [showAnswer, setShowAnswer] = useState(false);
+  const [item, setItem] = useState(-1);
 
   useEffect(() => {
     setTimeout(() => {
@@ -28,13 +29,13 @@ export default function Quiz() {
     }, 500);
   }, []);
 
-  const handleAnswer = (answer) => {
+  const handleAnswer = (answer, indicador) => {
     if (!showAnswer) {
       if (answer === questions[currentIndex].correct_answer) {
         setScore(score + 1);
       }
     }
-
+    setItem(indicador);
     setShowAnswer(true);
   };
 
@@ -42,10 +43,9 @@ export default function Quiz() {
     setEndQuiz(false);
     setScore(0);
     setCurrentIndex(Math.round(Math.random() * (questions.length - 1)));
-    alreadyIndexs.length = 0
-    alreadyIndexs.push(currentIndex)
+    alreadyIndexs.length = 0;
+    alreadyIndexs.push(currentIndex);
   };
-
 
   const handleNextQuestion = () => {
     setShowAnswer(false);
@@ -53,11 +53,14 @@ export default function Quiz() {
 
     do {
       newIndex = Math.round(Math.random() * (questions.length - 1));
-    } while (alreadyIndexs.includes(newIndex))
-    alreadyIndexs.push(newIndex)
+    } while (alreadyIndexs.includes(newIndex));
+    alreadyIndexs.push(newIndex);
     setCurrentIndex(newIndex);
 
-    if (alreadyIndexs.length > MAX_QUESTION || alreadyIndexs.length > questions.length) {
+    if (
+      alreadyIndexs.length > MAX_QUESTION ||
+      alreadyIndexs.length > questions.length
+    ) {
       setEndQuiz(true);
     }
   };
@@ -81,6 +84,7 @@ export default function Quiz() {
           handleAnswer={handleAnswer}
           handleNextQuestion={handleNextQuestion}
           showAnswer={showAnswer}
+          item={item}
           data={questions[currentIndex]}
         />
       ) : (

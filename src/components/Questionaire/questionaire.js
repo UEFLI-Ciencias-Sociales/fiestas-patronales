@@ -5,16 +5,19 @@ export default function Questionaire({
   handleNextQuestion,
   showAnswer,
   handleAnswer,
+  item=0,
   data: {
     question,
     correct_answer,
     answers
   },
 }) {
-
-  const handleClick = (answer) => {
-    handleAnswer(answer)
+  // const [mono,setMono] = useState(-1);
+  const handleClick = (answer,indicador) => {
+    handleAnswer(answer,indicador)
   }
+
+  // let cris = 0;
   
   return (
     <div className='questionaire-container'>
@@ -28,13 +31,16 @@ export default function Questionaire({
               ? 'correct'
               : 'incorrect'
             : undefined 
-
+        
         return <Button
           key={index}
           className={`${textColor} btn-questionaire`}
-          onClick={() => handleClick(answer)}
+          onClick={() => {handleClick(answer,index);
+            // setMono(index);
+          }}
         >
-          {answer}
+          {answer} + index {index} + item {item} 
+          {/* + mono {mono} */}
         </Button>
 })}
       </div>
