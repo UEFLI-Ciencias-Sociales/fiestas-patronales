@@ -41,16 +41,18 @@ export default function Quiz() {
   const resetQuiz = () => {
     setEndQuiz(false);
     setScore(0);
-    setCurrentIndex(0);
+    setCurrentIndex(Math.round(Math.random() * (questions.length - 1)));
     alreadyIndexs.length = 0
+    alreadyIndexs.push(currentIndex)
   };
+
 
   const handleNextQuestion = () => {
     setShowAnswer(false);
     let newIndex;
 
     do {
-      newIndex = Math.round(Math.random() * questions.length);
+      newIndex = Math.round(Math.random() * (questions.length - 1));
     } while (alreadyIndexs.includes(newIndex))
     alreadyIndexs.push(newIndex)
     setCurrentIndex(newIndex);

@@ -1,11 +1,11 @@
 import React from 'react'
 import classnames from 'classnames'
 
-export default function Button({children, className, ...props}) {
+export default function Button({children, className, block, ...props}) {
   const classes = classnames(
     'btn',
     {
-      'block': props.block
+      'block': block
     },
     className
   )
