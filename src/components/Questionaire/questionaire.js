@@ -16,9 +16,6 @@ export default function Questionaire({
   const handleClick = (answer,indicador) => {
     handleAnswer(answer,indicador)
   }
-
-  // let cris = 0;
-  console.log(item)
   
   return (
     <div className='questionaire-container'>
