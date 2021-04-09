@@ -1,0 +1,14 @@
+.detailProvice_line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
+.img-animation img {
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+
+.img-animation:hover img {
+  transform: scale(1.15);
+}

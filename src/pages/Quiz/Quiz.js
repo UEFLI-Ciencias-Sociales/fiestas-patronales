@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "../../components/Button";
 import { Loading } from "../../components/Loading";
 import { Questionaire } from "../../components/Questionaire";
@@ -36,17 +37,19 @@ export default function Quiz() {
       }
       setButtonSelect(undefined);
     }
+    console.log(alreadyIndexs)
     
     setShowAnswer(true);
     setButtonSelect(indicador);
   };
 
   const resetQuiz = () => {
+    const initialIndex = Math.round(Math.random() * (questions.length - 1))
     setEndQuiz(false);
     setScore(0);
-    setCurrentIndex(Math.round(Math.random() * (questions.length - 1)));
+    setCurrentIndex(initialIndex);
     alreadyIndexs.length = 0;
-    alreadyIndexs.push(currentIndex);
+    alreadyIndexs.push(initialIndex);
   };
 
   const handleNextQuestion = () => {
@@ -74,12 +77,12 @@ export default function Quiz() {
           <div className="quiz-score">
             Your score was {score}/{MAX_QUESTION}
           </div>
-          <Button onClick={resetQuiz} className="bg-white mb-1" block>
+          <Button onClick={resetQuiz} className="block w-full p-2 rounded-lg bg-white mb-4">
             Reset
           </Button>
-          <Button className="bg-white" block>
+          <Link to='/' className="text-center block w-full p-2 rounded-lg bg-white">
             Back to home
-          </Button>
+          </Link>
         </div>
       ) : questions.length > 0 ? (
         <Questionaire
