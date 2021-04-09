@@ -41,8 +41,6 @@
   --color: hsl(0, 90%, 66%);
 }
 
-.btn.selected{
-  opacity: 0.85;
-  background-color: blue;
-  color: white;
+.btn.selected {
+  border: 2px solid #333;
 }

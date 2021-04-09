@@ -13,7 +13,7 @@ export default function Quiz() {
   const [score, setScore] = useState(0);
   const [endQuiz, setEndQuiz] = useState(false);
   const [showAnswer, setShowAnswer] = useState(false);
-  const [item, setItem] = useState(-1);
+  const [buttonSelect, setButtonSelect] = useState(undefined);
 
   useEffect(() => {
     setTimeout(() => {
@@ -34,10 +34,11 @@ export default function Quiz() {
       if (answer === questions[currentIndex].correct_answer) {
         setScore(score + 1);
       }
+      setButtonSelect(undefined);
     }
-    console.log(indicador);
-    setItem(indicador);
+    
     setShowAnswer(true);
+    setButtonSelect(indicador);
   };
 
   const resetQuiz = () => {
@@ -85,7 +86,7 @@ export default function Quiz() {
           handleAnswer={handleAnswer}
           handleNextQuestion={handleNextQuestion}
           showAnswer={showAnswer}
-          item={item}
+          buttonSelect={buttonSelect}
           data={questions[currentIndex]}
         />
       ) : (
