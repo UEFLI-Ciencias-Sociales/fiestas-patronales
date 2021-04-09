@@ -5,7 +5,7 @@ export default function Questionaire({
   handleNextQuestion,
   showAnswer,
   handleAnswer,
-  item=0,
+  item,
   data: {
     question,
     correct_answer,
@@ -18,6 +18,7 @@ export default function Questionaire({
   }
 
   // let cris = 0;
+  console.log(item)
   
   return (
     <div className='questionaire-container'>

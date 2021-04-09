@@ -35,6 +35,7 @@ export default function Quiz() {
         setScore(score + 1);
       }
     }
+    console.log(indicador);
     setItem(indicador);
     setShowAnswer(true);
   };
