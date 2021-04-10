@@ -1,23 +1,9 @@
 import React from "react";
 
-const perfil = {
-  nombre: "juan",
-  apel: "romero",
-};
-
-export default function Hero({ background,children}) {
-
-  const textStyles = {
-    color: "#1c1c1c",
-    fontWeight: "700",
-    fontSize: "50px",
-    zIndex: "1",
-  };
-
+export default function Hero({ background, height = '400px', children }) {
   return (
-    <div style={background=`url("${background}")`} className="hero">
-      <div className="text-style" >{children}</div>
-      <div className="efect"/>
+    <div className="HeroParallax" style={{ height: height, backgroundImage: `url(${background})` }}>
+        <div className="HeroParallax__text text-4xl">{children}</div>
     </div>
   );
 }

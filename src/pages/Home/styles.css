@@ -5,6 +5,14 @@
   }
 }
 
-.Home{
-  color:aqua;
+.font-image {
+  background-image: url("https://www.wallpapertip.com/wmimgs/15-154273_wallpaper-samsung-galaxy-note-5-ultra-hd-2160.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }

@@ -1,20 +1,35 @@
 import React from "react";
-import { DetailProvince } from "src/components/DetailProvince";
+import { CardProvince } from "src/components/CardProvince";
 import { Header } from "src/components/Header";
-import { provinces } from "./provinces";
 import { Hero } from "src/components/Hero";
+import BACKGROUND from "src/assets/images/backgroundhome.jpg"
 
-const IMAGE_HERO="https://i.pinimg.com/736x/7d/eb/80/7deb80ae4e7ec859162d7c234f981524--ecuador-monuments.jpg";
-const LOJA_HERO="https://galapagosecotours.com/wp-content/uploads/2015/11/loja_ecuador_011.jpg";
+import { provinces } from "./provinces";
+
 export default function Home() {
+
+  // const FONT_MAIN = {
+  //   backgroundImage:`url("/static/media/backgroundhome.cc426b90.jpg")`,
+  //   backgroundRepeat: "no-repeat",
+  //   backgroundSize: "cover",
+  //   backgroundAttachment: "fixed",
+  //   backgroundPosition: "center",
+  //   display: "flex",
+  //   justifyContent: "center",
+  //   alignItems: "center",
+  //   position: "relative",
+  // }
+
   return (
     <>
     <Header />
-    <Hero background={IMAGE_HERO}>Los Cantones de la Provincia de Loja</Hero>
-      <main>
+    <Hero background={BACKGROUND}>
+      Los Cantones de la Provincia de Loja
+    </Hero>
+      <main className='font-image bg-gray-50'>
         {/* <Hero background='' /> */}
         <div className='container lg:max-w-screen-1200 mx-auto px-4'>
-          {provinces.map((item, index) => <DetailProvince {...item} key={index} />)}
+          {provinces.map((item, index) => <CardProvince {...item} key={index} />)}
         </div>
       </main>
     </>

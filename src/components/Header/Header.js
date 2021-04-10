@@ -1,32 +1,25 @@
 import React from "react";
-
-const headerStyles = {
-  height: "64px",
-  backgroundColor: "#fbfbfb",
-  boxShadow: "0 2px 4px 0 rgba(0, 0, 0, 0.25)",
-  padding: "8px 16px",
-};
-
-const navStyles = {
-  height: "100%",
-  display: "flex",
-  maxWidth: "1140px",
-  width: "100%",
-  marginLeft: "auto",
-  marginRight: "auto",
-  justifyContent: "space-between",
-  alignItems: "center",
-};
+import { Link } from 'react-router-dom'
+import LOGO from "src/assets/images/logo.png"
 
 export default function Header() {
   return (
-    <header style={headerStyles}>
-      <nav style={navStyles}>
-        <div className="logo"><img className="logo-img" src="logo.png"></img></div>
-        <div className="quiz">
-          Boton Al quiz
-        </div>        
-      </nav>
+    <header >
+      <div className='bg-white h-16 shadow py-2 px-4 z-10 w-full fixed'>
+        <nav className='flex h-full items-center justify-between mx-auto max-w-screen-lg'>
+          <div className="h-full flex items-center">
+            <img className="max-h-full" src={LOGO} alt='Logo UEFLI' />
+            <span className='ml-2 block md:text-base text-sm'>UEFLI Ciencias Sociales</span>
+          </div>
+          <Link
+            to='/quiz'
+            className="px-4 py-2 bg-blue-500 btn-press text-white rounded-lg md:text-base text-sm"
+          >
+            Iniciar Quiz
+          </Link>
+        </nav>
+      </div>
+      <div className='h-16' />
     </header>
   );
 }

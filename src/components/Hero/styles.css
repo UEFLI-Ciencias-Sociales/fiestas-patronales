@@ -1,29 +1,29 @@
-.hero {
-    background-position: center;
+.HeroParallax {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
     position: relative;
 }
 
-.text-style{
-    color: #1c1c1c;
-    font-weight: 700;
-    font-size: 50px;
-    z-index: 1;
-    text-align: center;
-}
-
-.efect{
+.HeroParallax::after {
+    content: '';
     position: absolute;
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px) saturate(1.5);;
     top: 0;
     left: 0;
-    backdrop-filter: blur(6px) saturate(1.5);;
     right: 0;
     bottom: 0;
+}
+
+.HeroParallax__text {
+    color: #1c1c1c;
+    font-weight: 700;
+    z-index: 1;
+    text-align: center;
+    text-transform: uppercase;
 }

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "../../components/Button";
-import { Loading } from "../../components/Loading";
-import { Questionaire } from "../../components/Questionaire";
-import { dataQuestions } from "../../data/questions";
+import { Button } from "src/components/Button";
+import { Loading } from "src/components/Loading";
+import { Questionaire } from "src/components/Questionaire";
+import { dataQuestions } from "src/data/questions";
 
 const MAX_QUESTION = 5;
 const alreadyIndexs = [0];
