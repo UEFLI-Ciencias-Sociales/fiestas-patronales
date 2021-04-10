@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { provinces } from "src/pages/Home/provinces";
 import PhotoProvince from "./PhotoProvince";
 import Summary from "./Summary";
@@ -24,7 +23,7 @@ export default function DetailProvince({
         <Summary showMoreInfo={showMoreInfo} handleShowMore={handleShowMore} summary={summary} />
       </article>
       <a href={path} className='rounded-lg px-4 text-center md:ml-auto py-2 text-white bg-blue-500 w-full md:w-auto md:inline-block'>
-        Leer más
+        Ir a la foro
         </a>
     </section>
   );
