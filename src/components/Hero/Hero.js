@@ -6,18 +6,6 @@ const perfil = {
 };
 
 export default function Hero({ background,children}) {
-  const heroStyles = {
-    background: `url(${background})`,
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundAttachment: "fixed",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "400px",
-    position: "relative",
-  };
 
   const textStyles = {
     color: "#1c1c1c",
@@ -27,7 +15,7 @@ export default function Hero({ background,children}) {
   };
 
   return (
-    <div style={heroStyles}>
+    <div style={background=`url("${background}")`} className="hero">
       <div className="text-style" >{children}</div>
       <div className="efect"/>
     </div>

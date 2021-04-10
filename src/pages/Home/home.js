@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
     <Header />
-    <Hero background={LOJA_HERO}>Los Cantones de la Provincia de Loja</Hero>
+    <Hero background={IMAGE_HERO}>Los Cantones de la Provincia de Loja</Hero>
       <main>
         {/* <Hero background='' /> */}
         <div className='container lg:max-w-screen-1200 mx-auto px-4'>
