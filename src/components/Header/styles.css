@@ -1,0 +1,28 @@
+header.david {
+  height: "64px";
+  background-color: "#fbfbfb";
+  box-shadow: "0 2px 4px 0 rgba(0, 0, 0, 0.25)";
+  padding: "8px 16px";
+}
+
+nav.navStyle {
+  height: "64px";
+  background-color: "#fbfbfb";
+  box-shadow: "0 2px 4px 0 rgba(0, 0, 0, 0.25)";
+  padding: "8px 16px";
+}
+
+.logo {
+  width: "150px";
+  height: "30px";
+}
+
+.logo-img {
+  width: 100%;
+}
+
+.quiz {
+  width: "150px";
+  height: "30px";
+  text-align: "right";
+}

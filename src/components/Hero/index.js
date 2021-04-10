@@ -1,4 +1,4 @@
 import Hero from './Hero'
-// import './styles.css'
+import './styles.css'
 
 export { Hero }
