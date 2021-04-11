@@ -5,7 +5,7 @@ export const dataQuestions = {
         "category": "conocimiento: Loja",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "¿En qué fecha es la fundación de Loja?",
+        "question": "¿En qué fecha fué la fundación de Loja?",
         "correct_answer": "8 de diciembre de 1548",
         "incorrect_answers": [
            "18 de diciembre de 1548",
@@ -17,7 +17,7 @@ export const dataQuestions = {
         "category": "conocimiento: Loja",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "¿Cuál es un cantón de Loja?",
+        "question": "¿Cuál es un cantón de la provincia de Loja?",
         "correct_answer": "Paltas",
         "incorrect_answers": [
            "Vinces",
@@ -77,7 +77,7 @@ export const dataQuestions = {
         "category": "conocimiento: Loja",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "¿Qué cantón es famoso por su producción de naranja, banano, mango, cacao y café??",
+        "question": "¿Qué cantón es famoso por su producción de naranja, banano, mango, cacao y  en especial el café??",
         "correct_answer": "Chaguarpamba",
           "incorrect_answers": [
              "Celica",
@@ -89,7 +89,7 @@ export const dataQuestions = {
         "category": "conocimiento: Loja",
         "type": "multiple",
         "difficulty": "easy",
-        "question": "¿De qué cantón tiene como idioma materno el Kichwa?",
+        "question": "¿Qué cantón tiene como idioma materno el Kichwa?",
           "correct_answer": "Saraguro",
           "incorrect_answers": [
              "Paltas",
