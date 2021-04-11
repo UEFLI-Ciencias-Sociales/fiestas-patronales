@@ -71,6 +71,7 @@ export default function Quiz() {
   };
 
   return (
+    
     <div className="quiz-container">
       {endQuiz ? (
         <div>

@@ -26,8 +26,8 @@ export default function Home() {
     <Hero background={BACKGROUND}>
       Los Cantones de la Provincia de Loja
     </Hero>
-      <main className='font-image bg-gray-50'>
-        {/* <Hero background='' /> */}
+      {/* <main className=' bg-gray-50'> */}
+      <main className='font-image'>
         <div className='container lg:max-w-screen-1200 mx-auto px-4'>
           {provinces.map((item, index) => <CardProvince {...item} key={index} />)}
         </div>

@@ -6,13 +6,15 @@
 }
 
 .font-image {
-  background-image: url("https://www.wallpapertip.com/wmimgs/15-154273_wallpaper-samsung-galaxy-note-5-ultra-hd-2160.jpg");
+  /* background-image: url("https://www.wallpapertip.com/wmimgs/15-154273_wallpaper-samsung-galaxy-note-5-ultra-hd-2160.jpg"); */
+  background-image: url("https://fondosmil.com/fondo/17031.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment:fixed;
   background-position: center;
-  display: flex;
+  display:flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  padding: 20px 0px;
 }
