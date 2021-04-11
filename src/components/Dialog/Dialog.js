@@ -1,12 +1,14 @@
 import React from "react";
+import Busto from "src/assets/images/busto.png";
 
 export default function Dialog() {
   return (
-    <div className="box">
-      <div className="image">
-        <img src="https://w7.pngwing.com/pngs/457/371/png-transparent-graphy-footage-earch-thinking-woman-miscellaneous-photography-people-thumbnail.png"></img>
+    <div className="nuevo">
+      <div className="container-image">
+        <img  className="image" src={Busto}></img>
       </div>
-      <div className="caja">Hola mijines aki voy ahora hacer unas cosas para ver que tal sale</div>
+      {/* <div className="div2 caja"><text>Este es un dato curioso</text></div> */}
+      <div className="talkbubble">Cris vale vrg 123</div>
     </div>
   );
 }
