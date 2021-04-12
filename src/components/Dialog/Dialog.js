@@ -5,10 +5,11 @@ export default function Dialog() {
   return (
     <div className="nuevo">
       <div className="container-image">
-        <img  className="image" src={Busto}></img>
+        <img className="image" src={Busto} />
       </div>
-      {/* <div className="div2 caja"><text>Este es un dato curioso</text></div> */}
-      <div className="talkbubble">Cris vale vrg 123</div>
+      <div className="content-talkbubble">
+        <div className="talkbubble">esto es un dialogo</div>
+      </div>
     </div>
   );
 }

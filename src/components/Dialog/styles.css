@@ -1,37 +1,35 @@
 .nuevo {
   max-height: 300px;
-  width: 100%;
-  background-color: black;
+  position: relative;
   display: flex;
-  margin: 20px;
+  justify-content: center;
+  padding-right: 100px;
+  max-width: 400px;
 }
 
-.box {
-  width: auto;
-  height: auto;
-  max-height: 40px;
-  display: flex;
-  /* background-color: black; */
-  position: relative;
-  z-index: 0;
+.nuevo *{
+
+  outline: 1px solid red;
+}
+
+.nuevo img {
+  max-height: 100%;
 }
 
 .container-image {
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: aqua;
-  justify-content: center;
-  align-items: center;
+  height: 200px;
+  display: inline-block;
 }
 
-.image {
-  height: 100%;
-  z-index: 2;
-  justify-content: end;
+.content-talkbubble{
+  top: 0;
+  right: 0;
+  position: absolute;
+
 }
 
 .talkbubble {
-  width: 120px;
+  padding: 1rem;
   height: 80px;
   background: rgba(59, 130, 246, 6);
   position: relative;
@@ -49,107 +47,4 @@
   border-top: 13px solid transparent;
   border-right: 26px solid rgba(59, 130, 246, 6);
   border-bottom: 13px solid transparent;
-}
-
-.dialog {
-  width: 100%;
-
-  background-color: blueviolet;
-}
-.caja {
-  width: 40%;
-  height: auto;
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 400;
-  margin: 0 0 30%;
-  overflow: hidden;
-  padding: 20px;
-  border-radius: 35px 35px 35px 0px;
-}
-.div2 {
-  text-align: center;
-  background: rgba(59, 130, 246, 6);
-  /* height: 100px; */
-  /* width: 100px; */
-  margin-top: 30px;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 10%;
-}
-
-.fancy {
-  text-align: center;
-
-  /* Same trick as previously used to make circles */
-  box-sizing: border-box;
-  width: auto;
-  height: 150px;
-  color: white;
-  padding: 80px 1em 0 1em;
-
-  /* We make room for the "ears" of our cloud */
-  margin: 0 100px;
-
-  position: relative;
-
-  background-color: rgba(59, 130, 246, 6);
-
-  /* Well, actually we are not making a full circle
-       as we want the bottom of our cloud to be flat.
-       Feel free to tweak this example to make a cloud
-       that isn't flat at the bottom ;) */
-  border-radius: 100% 100% 0 0;
-}
-
-/* Those are common style that apply to both our ::before
-     and ::after pseudo elements. */
-.fancy::before,
-.fancy::after {
-  /* This is required to be allowed to display the
-       pseudo-elements, event if the value is an empty
-       string */
-  content: "";
-
-  /* We position our pseudo-elements on the left and
-       right sides of the box, but always at the bottom */
-  position: absolute;
-  bottom: 0;
-
-  /* This makes sure our pseudo-elements will be below
-       the box content whatever happens. */
-  z-index: -1;
-
-  background-color: rgba(59, 130, 246, 6);
-  border-radius: 100%;
-}
-
-.fancy::before {
-  /* This is the  size of the clouds left ear */
-  width: 125px;
-  height: 125px;
-
-  /* We slightly move it to the left */
-  left: -80px;
-
-  /* To make sure that the bottom of the cloud
-       remains flat, we must make the bottom right
-       corner of the left ear square. */
-  border-bottom-right-radius: 0;
-}
-
-.fancy::after {
-  /* This is the size of the clouds left ear */
-  width: 100px;
-  height: 100px;
-
-  /* We slightly move it to the right */
-  right: -60px;
-
-  /* To make sure that the bottom of the cloud
-       remains flat, we must make the bottom left
-       corner of the right ear square. */
-  border-bottom-left-radius: 0;
 }

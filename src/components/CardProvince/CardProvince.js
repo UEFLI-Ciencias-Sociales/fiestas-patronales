@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Dialog } from "src/components/Dialog";
 import PhotoProvince from "./PhotoProvince";
 import Summary from "./Summary";
 
@@ -25,7 +24,6 @@ export default function DetailProvince({
       <a href={path} className='rounded-lg px-4 btn-press text-center md:ml-auto py-2 text-white bg-blue-500 w-full md:w-auto md:inline-block'>
         Ir al foro
         </a>
-      <Dialog/>
     </section>
   );
 }
