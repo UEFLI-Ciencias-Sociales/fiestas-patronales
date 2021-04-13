@@ -1,29 +1,29 @@
 import React from "react";
-import { CardProvince } from "src/components/CardProvince";
-import { Header } from "src/components/Header";
 import { Hero } from "src/components/Hero";
-import { Dialog } from "src/components/Dialog";
-import BACKGROUND from "src/assets/images/backgroundhome.jpg"
+import { Header } from "src/components/Header";
+import { BackgroundBubbles } from "src/components/BackgroundBubbles";
+import { CardProvince } from "src/components/CardProvince";
 
-import { provinces } from "./provinces";
+import { provinces } from "src/data/provinces";
+import BACKGROUND from "src/assets/images/backgroundhome.jpg"
+import HumanDialog from "src/components/HumanDialog/HumanDialog";
+
 
 export default function Home() {
 
   return (
     <>
-    <Header />
-    <Hero background={BACKGROUND}>
-      Los Cantones de la Provincia de Loja
-    </Hero>
-      {/* <main className=' bg-gray-50'> */}
-      <main className='font-image'>
-        <div className='container lg:max-w-screen-1200 mx-auto px-4'>
-          {provinces.map((item, index) => <>
-          <CardProvince {...item} key={index} />
-          <Dialog/>
-          </>
-          )}
-        </div>
+      <Header />
+      <main>
+        <Hero background={BACKGROUND} title='Los cantones de la provincia de Loja' />
+        <BackgroundBubbles className='container lg:max-w-screen-1200 mx-auto px-4 pt-6'>
+          {provinces.map((province, index) => (
+            <div className='flex flex-col'>
+              <CardProvince key={index} {...province} />
+              <HumanDialog />
+            </div>
+          ))}
+        </BackgroundBubbles>
       </main>
     </>
   );
