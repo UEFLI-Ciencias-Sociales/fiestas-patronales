@@ -5,6 +5,7 @@
   justify-content: center;
   padding-right: 100px;
   max-width: 400px;
+  background-color: black;
 }
 
 .nuevo *{
@@ -18,7 +19,17 @@
 
 .container-image {
   height: 200px;
-  display: inline-block;
+  /* display: inline-block; */
+}
+
+.test{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  right: 32%;
+  top: 10%;
+  z-index: 12;
 }
 
 .content-talkbubble{

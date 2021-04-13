@@ -9,18 +9,6 @@ import { provinces } from "./provinces";
 
 export default function Home() {
 
-  // const FONT_MAIN = {
-  //   backgroundImage:`url("/static/media/backgroundhome.cc426b90.jpg")`,
-  //   backgroundRepeat: "no-repeat",
-  //   backgroundSize: "cover",
-  //   backgroundAttachment: "fixed",
-  //   backgroundPosition: "center",
-  //   display: "flex",
-  //   justifyContent: "center",
-  //   alignItems: "center",
-  //   position: "relative",
-  // }
-
   return (
     <>
     <Header />

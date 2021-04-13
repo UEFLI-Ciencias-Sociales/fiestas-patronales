@@ -9,7 +9,9 @@ export default function Dialog() {
       </div>
       <div className="content-talkbubble">
         <div className="talkbubble">esto es un dialogo</div>
+
       </div>
+      <div className="test"></div>
     </div>
   );
 }
