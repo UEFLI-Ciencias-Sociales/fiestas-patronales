@@ -23,7 +23,7 @@ const PIDAL_IMAGE =
 const QUILANGA_IMAGE =
   "https://lahora.com.ec/contenido/cache/33/hoy__quilanga_esta_de_aniversario_2010117060910-1200x800.jpg";
 const OLMEDO_IMAGE =
-  "https://www.turismo.gob.ec/wp-content/uploads/2020/06/LOJA-PALTAS-PARQUE-CENTRAL-1-scaled.jpg";
+  "https://ec.viajandox.com/uploads/Olmedo_4.jpg";
 const PALTAS_IMAGE = "https://www.turismo.gob.ec/wp-content/uploads/2020/06/LOJA-PALTAS-PARQUE-CENTRAL-1-scaled.jpg";
 const PUYANGO_IMAGE = "https://vivacatamayo.org/wp-content/uploads/2021/01/Con-la-inauguracion-de-obras-Puyango-conmemora-74-anos-de-vida-Politica.jpg";
 const SOZORANGA_IMAGE = "https://imagenes.extra.ec/files/image_full/uploads/2020/07/09/5f071577ab22a.jpeg";
@@ -37,7 +37,7 @@ export const provinces = [
       "Saraguro ubicado en la Provincia de Loja, te abre la puerta de su cultura y tradición para llevar a sus turistas a un mágico tiempo ancestral. Se caracteriza por la autenticidad de sus comunidades indígenas, sus grandes tradiciones y sus hermosas tierras. El nombre de Saraguro viene de Sara que significa Maíz y Guro que significa Olla; dando paso a que sea conocido como el lugar del maíz o como: la tierra del maíz.Sus habitantes son carismáticos, humildes y orgullosos de sus ancestros, también son extremadamente creyentes y mitológicos pues a pesar del paso de los tiempos, se puede apreciar que aún se conservan algunos mitos y creencias entre los indígenas y campesinos de Saraguro, las mismas que se manifiestan a través de la música, danza, gastronomía y sus festividades andinas y religiosas.",
     leftImage: SARAGURO_IMAGE,
     showDialog: true,
-    dialog: 'Hola!'
+    dialog: 'Los saraguros, fueron en sus orígenes, mitimaes enviados por el inca Huayna Cápac cuando emprendió la conquista de Quito.'
   },
   {
     province: "Macará",
@@ -46,7 +46,7 @@ export const provinces = [
       "Macará es un cantón de provincia de Loja, de origen incásico de una llamada tribu Macarara, pero su nombre se fue adaptando por el continuo uso se suprimió la última sílaba, quedando en Macará. Su clima es subtropical seco, dando paso al lugar para ser más llamativo para su turismo y disfrutar de sus fiestas de cantonización se la celebra cada 22 de septiembre.Sus habitantes son trabajadores y hospitalarios dando paso a un disfrute y deleite del Río Macará y sus diferentes senderos, que dan vida al lugar, se puede realizar deportes como el ciclismo o el montañismo.Macará da la bienvenida para llevarlos a vivir una experiencia de riqueza ancestral, declarado pueblo mágico del Ecuador.",
     rightImage: MACARA_IMAGE,
     showDialog: true,
-    dialog: 'Hola!'
+    dialog: 'Macara ha sido identificado por su gran agricultura y libre comercio en su frontera con Perú'
   },
   {
     province: "Celica",
@@ -55,7 +55,7 @@ export const provinces = [
       "Por el intenso color de su cielo, Célica es conocida como la “Ciudad Celeste” su gente amigable, alegre y trabajadora de topografía plasmada de contrastes: azuladas montañas, verdes y profundos avalles, diversos pisos climáticos, exuberante agricultura y variada ganadería, fue fundada sobre poblados indígenas aún más antiguos a los Incas. De allí que se mantienen en exposición vestigios arqueológicos en un museo, que junto a las ruinas de una antiquísima ciudadela son muestras impresionantes de su tradición. ",
     leftImage: CELICA_IMAGE,
     showDialog: true,
-    dialog: 'Hola!'
+    dialog: 'Conocida como la Celestial Célica, fue fundada sobre poblados indígenas aún más antiguos a los Incas.'
   },
   {
     province: "Chaguarpamba",
@@ -64,7 +64,7 @@ export const provinces = [
       "Ubicado al noroeste de la provincia de Loja. Se encuentra en una zona de transición entre la Costa y los Andes ecuatorianos. Posee bellos paisajes rurales, exuberante vegetación y generoso suelo productivo. Su actividad económica es la agricultura y ganadería. Es famosa por su producción de naranja, banano, mango, cacao y café.",
     rightImage: CHAGUARPAMBA_IMAGE,
     showDialog: true,
-    dialog: 'Hola!'
+    dialog: 'Chaguarpamba es famosa por su producción de naranja, banano, mango, cacao y Café.'
   },
   {
     province: "Espíndola",
@@ -73,16 +73,16 @@ export const provinces = [
       "El cantón Espíndola se encuentra ubicado en un sitio privilegiado en el tema de recursos naturales, se caracteriza por su equidad social y sus recursos naturales exuberantemente beneficiosos para el país, sus habitantes son generosos, amables y reciben a los turistas con los brazos abiertos para que conozcan este paraíso que es parte del Ecuador.",
     leftImage: EPINDOLA_IMAGE,
     showDialog: true,
-    dialog: 'Hola!'
+    dialog: 'Entre los principales cultivos destacados de espindola esta la caña de azúcar, maíz, café, camote, yuca, guineo, tomate, cebolla y cebada.'
   },
   {
     province: "Loja",
     path: '',
     summary:
-      "Loja, también conocida como Inmaculada Concepción de Loja, es una ciudad ecuatoriana, cabecera cantonal del Cantón Loja y capital de la Provincia de Loja, así como la urbe más grande y poblada de la misma. Se encuentra atravesada por los ríos Zamora, Malacatos y Jipiro; Está ubicada al sur de la Región interandina del Ecuador, en la hoya del río Zamora, a una altitud de 2060 sobre el nivel del mar m.s.n.m.  y con un clima ecuatorial de 18 °C en promedio, con marcada influencia de clima tropical y templado andino.Es llamada la 'Capital Musical y Cultural del Ecuador' por su arquitectura, su diversidad cultural, su aporte a las artes, ciencias, música y letras ecuatorianas y por ser el lugar de nacimiento de muchos personajes ilustres de la sociedad ecuatoriana.",
+      "En el año de 1897, Loja fue la primera ciudad del Ecuador en contar con energía eléctrica.",
     rightImage: LOJA_IMAGE,
     showDialog: true,
-    dialog: 'Hola!'
+    dialog: 'En el año de 1897, Loja fue la primera ciudad del Ecuador en contar con energía eléctrica.'
   },
   {
     province: "Catamayo",
@@ -145,7 +145,7 @@ export const provinces = [
       "El cantón Gonzanamá, se encuentra ubicado en el ombligo de la hermosa provincia de Loja y goza de dos climas moderados: frio y templado, dando paso a ser un lugar hermoso para disfrutar. Su nombre está formado por dos palabras quichua-palta: Gonza = apellido del cacique de la tribu de los anamáes; y anama = tierra estimada, tierra codiciada. Este cantón tiene hermosos atractivos naturales llenos de magia que te llevarán a la relajación y disfrutar de escenarios turísticos maravillosos que deleitarán tu vista. Entre ellos: El mirador del Cerro Columbo, El baño Fluvial de Lansaca, Las Aguas sulfurosas de La Banda. Gonzanamá abre sus brazos para recibir a los turistas con el peculiar significado de su nombre “lugar predilecto para el dios de las aguas”.",
     leftImage: GONZANAMA_IMAGE,
     showDialog: true,
-    dialog: 'Hola!'
+    dialog: 'Hola'
   },
   {
     province: "Paltas",
@@ -154,7 +154,7 @@ export const provinces = [
       "Es un cantón de la provincia de Loja lleva este nombre por la presencia de la etnia preincaica Palta, Todas las parroquias rurales tienen sus ferias anuales, donde se dan cita, agricultores, ganaderos, pequeños y grandes comerciantes. Los domingos en la cabecera cantonal, son días de verdadera animación y actividad comercial, además tiene lugares privilegiados en cuanto a turismo ya que cuenta con balnearios, miradores que son un gran atractivo para quienes lo visitan. ",
     rightImage: PALTAS_IMAGE,
     showDialog: true,
-    dialog: 'Hola!'
+    dialog: 'Lleva el nombre Paltas por la presencia de la etnia preincaica Palta, que constituye el elemento fundamental de la etnografía e historia de la provincia de Loja.'
   },
   {
     province: "Puyango",
@@ -163,7 +163,7 @@ export const provinces = [
       "La presencia del cantón Puyango en estos territorios data de unos 1000 años aproximadamente, porque aún no se han realizado trabajos científicos arqueológicos y etnográficos que den fe de la verdadera prehistoria de este sector patrio; los numerosos restos arqueológicos encontrados en diferentes partes del cantón, los petroglifos y testimonios orales que se han transmitido de generación en generación, dan cuenta de la riqueza histórica que guarda el cantón Puyango, todavía no conocida. ",
     leftImage: PUYANGO_IMAGE,
     showDialog: true,
-    dialog: 'Hola!'
+    dialog: 'Su tesoro turístico el “Bosque Petrificado Puyango” por ser el bosque petrificado con una colección de fósiles vegetales y animales más grande del mundo, dando así un gran valor cultural a Puyango'
   },
   {
     province: "Sozoranga",
@@ -172,6 +172,6 @@ export const provinces = [
       "Sozoranga es un cantón acogedor y colonial cuya Geografía es una declinación de cordillera y está compuesta por mesetas y quebradas, el clima es seco y forma parte de zona de influencia de la Cuenca Catamayo - Chira., además de su gente amable y culta que da la bienvenida a su paraíso. Sozoranga es lugar lleno de tradición, cultura e historia, en donde el turista se remota a la época colonial de Loja. Sus lugares naturales turísticos los podemos encontrar en la Reserva Natural el Tundo, Bosque natural y vegetación Jatumpamba-Jorupe, la cueva de Naún Briones, bosque El Ceibal, los balnearios fluviales como: La Florida y Santa Ana; entre otros.",
     rightImage: SOZORANGA_IMAGE,
     showDialog: true,
-    dialog: 'Hola!'
+    dialog: 'En Sozoranga se encuentra gran diversidad de cultivos, como: maíz y caña de azúcar , el fréjol y el café.'
   },
 ];

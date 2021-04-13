@@ -1,0 +1,12 @@
+.bubble-dialog {
+  max-width: 250px;
+  left: 20%;
+  top: 0;
+}
+
+@media screen and (min-width: 321px) {
+  .bubble-dialog {
+    left: 28%;
+    max-width: 300px;
+  }
+}

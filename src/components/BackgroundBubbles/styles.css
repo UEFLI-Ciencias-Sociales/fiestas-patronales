@@ -1,4 +1,5 @@
-.BackgroundBubbles {
+.BackgroundBubbles-up,
+.BackgroundBubbles-down {
   position: relative;
 }
 
@@ -7,20 +8,27 @@
 
   position: absolute;
 
-  animation: bubbles-effect 4s ease-out infinite;
-  background: #09f;
+  background: #fff;
   z-index: -1;
 }
 
+.BackgroundBubbles-up .BackgroundBubbles__bubble {
+  animation: bubbles-effect-up 4s ease-out infinite;
+}
 
-.BackgroundBubbles__bubble:nth-child(1) {
+.BackgroundBubbles-down .BackgroundBubbles__bubble {
+  animation: bubbles-effect-down 4s ease-out infinite;
+}
+
+
+.BackgroundBubbles-down .BackgroundBubbles__bubble:nth-child(1) {
   height: 80px;
   width: 80px;
   left: 5%;
   animation-duration: 5s;
 }
 
-.BackgroundBubbles__bubble:nth-child(2) {
+.BackgroundBubbles-down .BackgroundBubbles__bubble:nth-child(2) {
   height: 100px;
   width: 100px;
   left: 25%;
@@ -28,42 +36,99 @@
   animation-delay: 3s;
 }
 
-.BackgroundBubbles__bubble:nth-child(3) {
+.BackgroundBubbles-down .BackgroundBubbles__bubble:nth-child(3) {
   height: 20px;
   width: 20px;
   left: 37%;
   animation-duration: 3.5s;
 }
 
-.BackgroundBubbles__bubble:nth-child(4) {
+.BackgroundBubbles-down .BackgroundBubbles__bubble:nth-child(4) {
   height: 60px;
   width: 60px;
   left: 38%;
   animation-duration: 4s;
 }
 
-.BackgroundBubbles__bubble:nth-child(5) {
+.BackgroundBubbles-down .BackgroundBubbles__bubble:nth-child(5) {
   height: 35px;
   width: 35px;
   left: 50%;
   animation-duration: 4s;
 }
 
-.BackgroundBubbles__bubble:nth-child(6) {
+.BackgroundBubbles-down .BackgroundBubbles__bubble:nth-child(6) {
   height: 10px;
   width: 10px;
   left: 52%;
   animation-duration: 4.5s;
 }
 
-.BackgroundBubbles__bubble:nth-child(7) {
+.BackgroundBubbles-down .BackgroundBubbles__bubble:nth-child(7) {
   height: 80px;
   width: 80px;
   right: 30%;
   animation-duration: 5s;
 }
 
-.BackgroundBubbles__bubble:nth-child(8) {
+.BackgroundBubbles-down .BackgroundBubbles__bubble:nth-child(8) {
+  height: 70px;
+  width: 70px;
+  right: 5%;
+  animation-duration: 5s;
+}
+
+.BackgroundBubbles-up .BackgroundBubbles__bubble:nth-child(1) {
+  height: 80px;
+  width: 80px;
+  left: 5%;
+  animation-duration: 5s;
+}
+
+.BackgroundBubbles-up .BackgroundBubbles__bubble:nth-child(2) {
+  height: 100px;
+  width: 100px;
+  left: 25%;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+
+.BackgroundBubbles-up .BackgroundBubbles__bubble:nth-child(3) {
+  height: 20px;
+  width: 20px;
+  left: 37%;
+  animation-duration: 3.5s;
+}
+
+.BackgroundBubbles-up .BackgroundBubbles__bubble:nth-child(4) {
+  height: 60px;
+  width: 60px;
+  left: 38%;
+  animation-duration: 4s;
+}
+
+.BackgroundBubbles-up .BackgroundBubbles__bubble:nth-child(5) {
+  height: 35px;
+  width: 35px;
+  left: 50%;
+  animation-duration: 4s;
+}
+
+.BackgroundBubbles-up .BackgroundBubbles__bubble:nth-child(6) {
+  height: 10px;
+  width: 10px;
+  left: 52%;
+  animation-duration: 4.5s;
+}
+
+.BackgroundBubbles-up .BackgroundBubbles__bubble:nth-child(7) {
+  height: 80px;
+  width: 80px;
+  right: 30%;
+  animation-duration: 5s;
+}
+
+.BackgroundBubbles-up .BackgroundBubbles__bubble:nth-child(8) {
   height: 70px;
   width: 70px;
   right: 5%;
@@ -71,16 +136,36 @@
 }
 
 
-@keyframes bubbles-effect {
+@keyframes bubbles-effect-down {
   0% {
     opacity: 0;
     bottom: 0;
+  }
+  5% {
+    opacity: 0.1;
   }
   50% {
     opacity: 0.6;
   }
   100% {
     bottom: calc(100vh * 2.5);
+    opacity: 0;
+  }
+}
+
+@keyframes bubbles-effect-up {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    top: calc(100vh * 2.5);
     opacity: 0;
   }
 }

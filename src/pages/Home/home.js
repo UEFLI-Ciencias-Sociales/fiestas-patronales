@@ -5,29 +5,28 @@ import { BackgroundBubbles } from "src/components/BackgroundBubbles";
 import { CardProvince } from "src/components/CardProvince";
 
 import { provinces } from "src/data/provinces";
-import BACKGROUND from "src/assets/images/backgroundhome.jpg"
-import HumanDialog from "src/components/HumanDialog/HumanDialog";
-
+import BACKGROUND from "src/assets/images/backgroundhome.jpg";
+import { HumanDialog } from "src/components/HumanDialog";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main>
-        <Hero background={BACKGROUND} title='Los cantones de la provincia de Loja' />
-        <BackgroundBubbles className='container lg:max-w-screen-1200 mx-auto px-4 pt-6'>
-<<<<<<< HEAD
-          {provinces.map(({showDialog, dialog, ...province}, index) => (
-            <div className='flex flex-col'>
+      <main className='bg-blue-500'>
+        <Hero
+          background={BACKGROUND}
+          height='500px'
+          title="Los cantones de la provincia de Loja"
+        />
+        <BackgroundBubbles className="container mx-auto px-4 z-1 relative z-1 pt-8 pb-16">
+          {provinces.map(({ showDialog, dialog, ...province }, index) => (
+            <>
               <CardProvince key={index} {...province} />
-              {showDialog && <HumanDialog dialog={dialog} />}
-=======
-          {provinces.map((province, index) => (
-            <div className='flex flex-col'>
-              <CardProvince key={index} {...province} />
-              <HumanDialog />
->>>>>>> 55b8b291a5f31c1b58d46d8dcf0045b779232bd8
-            </div>
+              {showDialog && <HumanDialog
+                marginBottom={index === provinces.length - 1 ? undefined : 'mb-16'}
+                dialog={dialog}
+              />}
+            </>
           ))}
         </BackgroundBubbles>
       </main>
