@@ -42,11 +42,7 @@ export default function Questionaire({
         </Button>
 })}
       </div>
-<<<<<<< HEAD
-      {showAnswer && <Button className="ml-auto bg-blue-400 p-2 mt-4" onClick={handleNextQuestion}>
-=======
       {showAnswer && <Button className="ml-auto text-white bg-blue-400 p-2 mt-4" onClick={handleNextQuestion}>
->>>>>>> 55b8b291a5f31c1b58d46d8dcf0045b779232bd8
         Next Question
       </Button>}
     </div>
