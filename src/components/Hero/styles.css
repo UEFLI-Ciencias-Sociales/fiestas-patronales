@@ -7,17 +7,21 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 
 .HeroParallax::after {
     content: '';
     position: absolute;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.35);
     backdrop-filter: blur(4px) saturate(1.5);;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 
 .HeroParallax__text {

@@ -2,18 +2,18 @@ import React from "react";
 import IMAGE from "src/assets/images/human-dialog.png";
 import DialogSVG from "../Icons/DialogSVG";
 
-export default function HumanDialog() {
+export default function HumanDialog({ dialog, marginBottom }) {
   return (
-    <div className="flex justify-center relative max-h-64">
+    <div className={`flex mx-auto justify-center relative max-h-64 ${marginBottom && marginBottom}`}>
       <div className="relative pr-32">
         <div>
-          <img className='max-h-64 w-auto' src={IMAGE} alt="sadsds" />
+          <img className='max-h-48 w-auto' src={IMAGE} alt="sadsds" />
         </div>
-        <div className="absolute top-0 -right-16 pl-3 pb-3">
-          <div className="p-4 bg-blue-500 rounded-lg w-64 text-white">
-            Hola comsda sdas dasdas dasd asd aso estas
+        <div className="bubble-dialog absolute pl-3">
+          <div className="p-4 bg-white rounded-lg text-sm md:text-base text-blue-500">
+            {dialog}
           </div>
-          <DialogSVG className="text-blue-500 absolute left-0 bottom-0" />
+          <DialogSVG className="text-white absolute left-0 top-1" />
         </div>
       </div>
     </div>

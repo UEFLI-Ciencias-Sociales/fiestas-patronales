@@ -22,6 +22,7 @@
   "eslintConfig": {
     "extends": [
       "react-app",
+              
       "react-app/jest"
     ]
   },
@@ -40,8 +41,6 @@
   "devDependencies": {
     "autoprefixer": "^9.8.6",
     "classnames": "^2.3.1",
-    "gh-pages": "^3.1.0",
-    "postcss": "^7.0.35",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.0"
+    "gh-pages": "^3.1.0"
   }
 }
