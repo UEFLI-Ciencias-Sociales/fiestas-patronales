@@ -1,19 +1,29 @@
 import React from "react";
+import { Hero } from "src/components/Hero";
+import { Header } from "src/components/Header";
+import { BackgroundBubbles } from "src/components/BackgroundBubbles";
+import { CardProvince } from "src/components/CardProvince";
+
+import { provinces } from "src/data/provinces";
+import BACKGROUND from "src/assets/images/backgroundhome.jpg"
+import HumanDialog from "src/components/HumanDialog/HumanDialog";
+
 
 export default function Home() {
   return (
     <>
-      <h1>Las provincias lojanas</h1>
-      <section>
-        <article>
-          <h2>Catamayo</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint labore
-              modi velit adipisci quidem aliquam possimus omnis perferendis dolor
-              doloribus fugit facere, pariatur est dolore a ad ipsum corporis quod.
-            </p>
-        </article>
-      </section>
+      <Header />
+      <main>
+        <Hero background={BACKGROUND} title='Los cantones de la provincia de Loja' />
+        <BackgroundBubbles className='container lg:max-w-screen-1200 mx-auto px-4 pt-6'>
+          {provinces.map((province, index) => (
+            <div className='flex flex-col'>
+              <CardProvince key={index} {...province} />
+              <HumanDialog />
+            </div>
+          ))}
+        </BackgroundBubbles>
+      </main>
     </>
   );
 }

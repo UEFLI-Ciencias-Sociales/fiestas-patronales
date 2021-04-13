@@ -20,27 +20,3 @@
   grid-template-rows: 1fr 1fr;
   grid-gap: 1rem;
 }
-
-.btn-questionaire {
-  --color: var(--blue-color);
-  --background: white;
-  padding: 1rem;
-  border: 0;
-  border-radius: 0.5rem;
-}
-
-.btn.select {
-  opacity: 0.85;
-}
-
-.btn.correct {
-  --color: hsl(90, 80%, 55%);
-}
-
-.btn.incorrect {
-  --color: hsl(0, 90%, 66%);
-}
-
-.btn.selected {
-  border: 2px solid #333;
-}
