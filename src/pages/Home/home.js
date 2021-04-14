@@ -12,22 +12,28 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className='bg-blue-500'>
+      <main className="bg-blue-500">
         <Hero
           background={BACKGROUND}
-          height='500px'
+          height="500px"
           title="Los cantones de la provincia de Loja"
         />
         <BackgroundBubbles className="container mx-auto px-4 z-1 relative z-1 pt-8 pb-16">
-          {provinces.map(({ showDialog, dialog, ...province }, index) => (
-            <>
-              <CardProvince key={index} {...province} />
-              {showDialog && <HumanDialog
-                marginBottom={index === provinces.length - 1 ? undefined : 'mb-16'}
-                dialog={dialog}
-              />}
-            </>
-          ))}
+          {provinces.map(({ showDialog, dialog, ...province }, index) => {
+            return (
+              <div>
+                <CardProvince {...province} />
+                {showDialog && (
+                  <HumanDialog
+                    marginBottom={
+                      index === provinces.length - 1 ? undefined : "mb-16"
+                    }
+                    dialog={dialog}
+                  />
+                )}
+              </div>
+            );
+          })}
         </BackgroundBubbles>
       </main>
     </>

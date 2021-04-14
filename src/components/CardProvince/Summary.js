@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "../Button";
 
 
-export default function Summary({showMoreInfo, handleShowMore, summary}) {
+export default function Summary({showMoreInfo, handleShowMore, maxCharacters, summary}) {
   return (
     <div className='md:w-3/4 flex flex-col'>
       <div
