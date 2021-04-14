@@ -1,5 +1,5 @@
 const SARAGURO_IMAGE =
-  "https://i.pinimg.com/originals/15/e7/e2/15e7e23cfd5fb7e5ed2290cd93a27c32.jpg";
+  "https://i.pinimg.com/736x/08/ee/bb/08eebb831d4dc83cd668e6094bc18a8f--ecuador-south-america.jpg";
 const GONZANAMA_IMAGE =
   "https://lahora.com.ec/contenido/cache/55/gonzanama-incluye-agenda-cultural-en-sus-fiestas-imagen-1-_20200921071226-2000x2000.jpg";
 const MACARA_IMAGE =
@@ -15,7 +15,7 @@ const LOJA_IMAGE =
 const CATAMAYO_IMAGE =
   "https://radioluzyvidafm.com/wp-content/uploads/2018/05/1-32.jpg";
 const CALVAS_IMAGE =
-  "https://img.goraymi.com/2015/08/11/5cc862ad8aa60e1f4a83a3bd9e77bf50_lg.jpg";
+  "http://www.gobiernocalvas.gob.ec/images/DSC02487.jpg";
 const ZAPOTILLO_IMAGE =
   "https://lahora.com.ec/contenido/cache/4f/zapotillo-celebra-38-anos-de-cantonizacion-imagen-1-_20180826071947-682x512.jpg";
 const PIDAL_IMAGE =
@@ -73,13 +73,13 @@ export const provinces = [
       "El cantón Espíndola se encuentra ubicado en un sitio privilegiado en el tema de recursos naturales, se caracteriza por su equidad social y sus recursos naturales exuberantemente beneficiosos para el país, sus habitantes son generosos, amables y reciben a los turistas con los brazos abiertos para que conozcan este paraíso que es parte del Ecuador.",
     leftImage: EPINDOLA_IMAGE,
     showDialog: true,
-    dialog: 'Entre los principales cultivos destacados de espindola esta la caña de azúcar, maíz, café, camote, yuca, guineo, tomate, cebolla y cebada.'
+    dialog: 'Entre los principales cultivos destacados esta la caña de azúcar, maíz, café, camote, yuca, guineo, tomate, cebolla y cebada.'
   },
   {
     province: "Loja",
     path: '',
     summary:
-      "En el año de 1897, Loja fue la primera ciudad del Ecuador en contar con energía eléctrica.",
+      "Loja, también conocida como Inmaculada Concepción de Loja, es una ciudad ecuatoriana, cabecera cantonal del Cantón Loja y capital de la Provincia de Loja, así como la urbe más grande y poblada de la misma. Se encuentra atravesada por los ríos Zamora, Malacatos y Jipiro; Está ubicada al sur de la Región interandina del Ecuador, en la hoya del río Zamora, a una altitud de 2060 sobre el nivel del mar m.s.n.m.  y con un clima ecuatorial de 18 °C en promedio, con marcada influencia de clima tropical y templado andino.Es llamada la 'Capital Musical y Cultural del Ecuador' por su arquitectura, su diversidad cultural, su aporte a las artes, ciencias, música y letras ecuatorianas y por ser el lugar de nacimiento de muchos personajes ilustres de la sociedad ecuatoriana.",
     rightImage: LOJA_IMAGE,
     showDialog: true,
     dialog: 'En el año de 1897, Loja fue la primera ciudad del Ecuador en contar con energía eléctrica.'
@@ -91,7 +91,7 @@ export const provinces = [
       "El Cantón Catamayo, es una ciudad ecuatoriana; cabecera cantonal del Cantón Catamayo, así como la segunda urbe más grande y poblada de la Provincia de Loja. Se localiza al sur de la Región interandina, asentada en la llanura del valle de Catamayo, en losflancos externos de la cordillera occidental de los Andes en la hoya del río Catamayo; Está por el río Trapichillo, a una altitud de 1238 metros sobre el nivel del mar (m.s.n.m.) y con un clima tropical seco de 24°C en promedio.",
     leftImage: CATAMAYO_IMAGE,
     showDialog: true,
-    dialog: 'Hola!'
+    dialog: 'Se caracteriza por maravillosos paisajes naturales en los que se destaca una flora y fauna exuberantes.'
   },
   {
     province: "Calvas",
@@ -100,7 +100,7 @@ export const provinces = [
       "El Cantón Calvas es un pedazo territorial maravilloso de la provincia de Loja en el Ecuador. El origen de su nombre se debe al río del mismo nombre que sirve de frontera con el Perú. Es un lugar de riqueza turística debido a sus paisajes maravillosos que ofrecen una panorámica sorprendente. La población total en el cantón Calvas es de 28.185 habitantes de acuerdo al censo realizado en 2010, para 2020 se estima una población de 31,000 habitantes, la cual está distribuida en un 47% en la zona urbana, 28% en la periferie, y 24% en las parroquias rurales.",
     rightImage: CALVAS_IMAGE,
     showDialog: true,
-    dialog: 'Hola!'
+    dialog: 'Se asegura que era el sitio preferido por Huayna Cápac quien, descansaba en el lugar y se refrescaba en este balneario natural.'
   },
   {
     province: "Zapotillo",
@@ -109,7 +109,7 @@ export const provinces = [
       "Zapotillo es  uno de los lugares más hermosos de la provincia de Loja, su nombre es el diminutivo que le dieron sus primeros pobladores, debido a la abundancia de la fruta exótica el zapote que se da en el lugar, también se caracteriza por la belleza exuberante de su naturaleza llena de tamarindos, algarrobos y palmeras que invaden los sentidos con sus aromas. Celebran sus fiestas de cantonización cada 27 de agosto.El cálido clima de Zapotillo da paso a un oasis de palmeras, algarrobos, tamarindos, almendros, faiques, guayacanes, gualtacos, barbascos, sotas, charanes y buganvillas.",
     leftImage: ZAPOTILLO_IMAGE,
     showDialog: true,
-    dialog: 'Hola!'
+    dialog: 'Una vez al año, en los meses de diciembre a enero se puede presenciar del "Florecmiento de los Guayacanes"'
   },
   {
     province: "Pindal",
@@ -118,7 +118,7 @@ export const provinces = [
       "Pindal te recibe con lindos paisajes naturales que invitan al turista a recorrerlos y conocer su variada geografía. Pindal tiene fértil tierra en la que sus habitantes carismáticos, sencillos y alegres cultivan sus productos y esperanzas para obtener un futuro prometedor para sus hijos con el trabajo y la organización de su gente, promotores del progreso y adelanto de su querida ciudad demuestran al mundo que no solo son un cantón sino una familia que vela por sus niños.Este lindo cantón situado en la provincia de Loja recibe este nombre toponímico pindal (pindu = caña) lo llaman así por la gran cantidad de pindos que forman la mayor parte de la vegetación.",
     rightImage: PIDAL_IMAGE,
     showDialog: true,
-    dialog: 'Hola!'
+    dialog: 'Este sector la agricultura y ganadería, catalogada como "La Cápital Maicera del Ecuador"'
   },
   {
     province: "Quilanga",
@@ -127,16 +127,16 @@ export const provinces = [
       "Quilanga está situado en la provincia de Loja, que en quechua significa “Nido de Gavilanes”  se lo llama así porque en el cerro El Chiro que vigila la ciudad, anidan los gavilanes que son aves de rapiña llamados quiquillicos.Su suelo es fértil y rico en este se cosecha fréjol, linaza, arveja, naranja, aguacates, chirimoya, guabas, limones, yuca, guineo, maní, etc. el trabajo de sus habitantes lo hace más especial a Quilanga, son gente de trabajo, sencillos y alegres al ser parte de esta hermosa tierra. Celebran su cantonización cada 8 de noviembre.",
     leftImage: QUILANGA_IMAGE,
     showDialog: true,
-    dialog: 'Hola!'
+    dialog: '"Las Cuevas" situadas al pie del Cerro El Chiro, donde se han encontrado numerosos cráneos y huesos humanos.'
   },
   {
     province: "Olmedo",
     path: '',
     summary:
-      "El cantón Olmedo está ubicado en la Provincia de Loja, es el más pequeño pero su grandeza está en sus habitantes que han recibido reconocimientos a nivel nacional por su producción de café y otros productos en menor escala como el maní, productos frutales y granos.En este hermoso cantón hay evidencia de la etnia aborigen preincaica Palta de incidencia notable en la identidad provincial. Sin duda alguna, el Cantón Olmedo es un sitio que uno tiene que visitar para conocer, enriquecido con innumerables tradiciones culturales en diversos ámbitos y especificidades, tanto artesanales utilitaria y productivas, como artísticas y culinarias.",
+      "El cantón Olmedo está ubicado en la Provincia de Loja, es el más pequeño pero su grandeza está en sus habitantes que han recibido reconocimientos a nivel nacional por su producción de café y otros productos en menor escala como el maní, productos frutales y granos. En este hermoso cantón hay evidencia de la etnia aborigen preincaica Palta de incidencia notable en la identidad provincial. Sin duda alguna, el Cantón Olmedo es un sitio que uno tiene que visitar para conocer, enriquecido con innumerables tradiciones culturales en diversos ámbitos y especificidades, tanto artesanales utilitaria y productivas, como artísticas y culinarias.",
     rightImage: OLMEDO_IMAGE,
     showDialog: true,
-    dialog: 'Hola!'
+    dialog: 'Ha recibido reconocimientos a nivel nacional por su producción de café y otros productos como el maní, productos frutales y granos.'
   },
   {
     province: "Gonzanamá",
@@ -145,7 +145,7 @@ export const provinces = [
       "El cantón Gonzanamá, se encuentra ubicado en el ombligo de la hermosa provincia de Loja y goza de dos climas moderados: frio y templado, dando paso a ser un lugar hermoso para disfrutar. Su nombre está formado por dos palabras quichua-palta: Gonza = apellido del cacique de la tribu de los anamáes; y anama = tierra estimada, tierra codiciada. Este cantón tiene hermosos atractivos naturales llenos de magia que te llevarán a la relajación y disfrutar de escenarios turísticos maravillosos que deleitarán tu vista. Entre ellos: El mirador del Cerro Columbo, El baño Fluvial de Lansaca, Las Aguas sulfurosas de La Banda. Gonzanamá abre sus brazos para recibir a los turistas con el peculiar significado de su nombre “lugar predilecto para el dios de las aguas”.",
     leftImage: GONZANAMA_IMAGE,
     showDialog: true,
-    dialog: 'Hola'
+    dialog: 'La especie que predomina es el ganado bovino, lo que ha permitido que se haya destacado como un centro productor de queso.'
   },
   {
     province: "Paltas",
@@ -154,7 +154,7 @@ export const provinces = [
       "Es un cantón de la provincia de Loja lleva este nombre por la presencia de la etnia preincaica Palta, Todas las parroquias rurales tienen sus ferias anuales, donde se dan cita, agricultores, ganaderos, pequeños y grandes comerciantes. Los domingos en la cabecera cantonal, son días de verdadera animación y actividad comercial, además tiene lugares privilegiados en cuanto a turismo ya que cuenta con balnearios, miradores que son un gran atractivo para quienes lo visitan. ",
     rightImage: PALTAS_IMAGE,
     showDialog: true,
-    dialog: 'Lleva el nombre Paltas por la presencia de la etnia preincaica Palta, que constituye el elemento fundamental de la etnografía e historia de la provincia de Loja.'
+    dialog: 'Lleva su nombre por la presencia de la etnia preincaica Palta, fundamental de la etnografía e historia de la provincia de Loja.'
   },
   {
     province: "Puyango",
@@ -163,7 +163,7 @@ export const provinces = [
       "La presencia del cantón Puyango en estos territorios data de unos 1000 años aproximadamente, porque aún no se han realizado trabajos científicos arqueológicos y etnográficos que den fe de la verdadera prehistoria de este sector patrio; los numerosos restos arqueológicos encontrados en diferentes partes del cantón, los petroglifos y testimonios orales que se han transmitido de generación en generación, dan cuenta de la riqueza histórica que guarda el cantón Puyango, todavía no conocida. ",
     leftImage: PUYANGO_IMAGE,
     showDialog: true,
-    dialog: 'Su tesoro turístico el “Bosque Petrificado Puyango” por ser el bosque petrificado con una colección de fósiles vegetales y animales más grande del mundo, dando así un gran valor cultural a Puyango'
+    dialog: '“Bosque Petrificado Puyango” por ser el bosque petrificado con una colección de fósiles vegetales y animales más grande del mundo'
   },
   {
     province: "Sozoranga",

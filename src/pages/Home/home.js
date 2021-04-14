@@ -3,12 +3,13 @@ import { Hero } from "src/components/Hero";
 import { Header } from "src/components/Header";
 import { BackgroundBubbles } from "src/components/BackgroundBubbles";
 import { CardProvince } from "src/components/CardProvince";
-
 import { provinces } from "src/data/provinces";
 import BACKGROUND from "src/assets/images/backgroundhome.jpg";
 import { HumanDialog } from "src/components/HumanDialog";
 
+
 export default function Home() {
+
   return (
     <>
       <Header />

@@ -18,7 +18,7 @@ export default function Questionaire({
   }
   
   return (
-    <div className='questionaire-container'>
+    <div className='questionaire-container px-4'>
       <div className='question-container'>
           {question}
       </div>
