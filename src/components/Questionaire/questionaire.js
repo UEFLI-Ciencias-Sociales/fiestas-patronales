@@ -19,7 +19,7 @@ export default function Questionaire({
   
   return (
     <div className='questionaire-container'>
-      <div className='question-container'>
+      <div className='question-container px-4'>
           {question}
       </div>
       <div className='response-container'>
