@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import PhotoProvince from "./PhotoProvince";
 import Summary from "./Summary";
+import { StudentEnglish } from "../StudentEnglish";
+import { useTranslator } from 'src/context/TranslatorContext'
+
 
 export default function DetailProvince({
   province,
@@ -8,9 +11,14 @@ export default function DetailProvince({
   leftImage,
   path,
   rightImage,
+  studentImage,
+  studentName,
+  studentAudio
 }) {
 
   const [showMoreInfo, setShowMoreInfo] = useState(false)
+  const { isTranslator } = useTranslator()
+
 
   const handleShowMore = () => setShowMoreInfo(!showMoreInfo)
 
@@ -19,8 +27,11 @@ export default function DetailProvince({
       <h2 className="text-lg font-semibold mb-4">{province}</h2>
       <article className={`img-animation ${rightImage && 'md:flex-row-reverse'} text-gray-500 md:flex-row flex-col flex-col-reverse flex md:items-center mb-4 `}>
         <PhotoProvince rightImage={rightImage} leftImage={leftImage} province={province} />
-        <Summary showMoreInfo={showMoreInfo} handleShowMore={handleShowMore} summary={summary} />
+        <Summary showMoreInfo={showMoreInfo} handleShowMore={handleShowMore} summary={isTranslator ? summary.english : summary.spanish} />
       </article>
+      {console.log({studentImage, studentName,studentAudio})}
+      <hr className='mb-4' />
+      <StudentEnglish studentImage={studentImage} studentName={studentName} studentAudio={studentAudio}/>
       <a href={path} className='rounded-lg px-4 btn-press text-center md:ml-auto py-2 text-white bg-blue-500 w-full md:w-auto md:inline-block'>
         Ir al foro
         </a>

@@ -1,8 +1,10 @@
 import React from "react";
 import { Button } from "../Button";
+import { useTranslator } from 'src/context/TranslatorContext'
 
 
 export default function Summary({showMoreInfo, handleShowMore, maxCharacters, summary}) {
+  const { isTranslator } = useTranslator()
   return (
     <div className='md:w-3/4 flex flex-col'>
       <div
@@ -12,7 +14,7 @@ export default function Summary({showMoreInfo, handleShowMore, maxCharacters, su
         {summary}
       </div>
       <Button onClick={handleShowMore} className="ml-auto text-blue-500 hover:text-blue-400 transition-all p-0 text-sm">
-        Mostrar {showMoreInfo ? "menos" : "más"}
+      {isTranslator ? showMoreInfo ? "Mostrar menos" : "Mostrar más" : showMoreInfo ? "Show less" : "Show more"}
       </Button>
     </div>
   );

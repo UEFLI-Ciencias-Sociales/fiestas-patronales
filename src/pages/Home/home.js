@@ -6,9 +6,11 @@ import { CardProvince } from "src/components/CardProvince";
 import { provinces } from "src/data/provinces";
 import BACKGROUND from "src/assets/images/backgroundhome.jpg";
 import { HumanDialog } from "src/components/HumanDialog";
+import { useTranslator } from 'src/context/TranslatorContext'
 
 
 export default function Home() {
+  const { isTranslator, handleToggle } = useTranslator()
 
   return (
     <>
@@ -36,6 +38,9 @@ export default function Home() {
             );
           })}
         </BackgroundBubbles>
+        <button onClick={handleToggle} className='w-16 shadow-inner h-16 z-10 outline-none rounded-full text-white bg-black fixed bottom-4 right-2'>
+          {isTranslator ? 'ES' : 'EN'}
+        </button>
       </main>
     </>
   );

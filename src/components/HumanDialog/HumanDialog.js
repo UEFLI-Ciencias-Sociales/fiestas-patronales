@@ -7,7 +7,7 @@ export default function HumanDialog({ dialog, marginBottom }) {
     <div className={`flex mx-auto justify-center relative max-h-64 ${marginBottom && marginBottom}`}>
       <div className="relative pr-32">
         <div>
-          <img className='max-h-48 w-auto' src={IMAGE} alt="sadsds" />
+          <img className='max-h-48 w-auto' src={IMAGE} alt="campecino" />
         </div>
         <div className="bubble-dialog absolute pl-3">
           <div className="p-4 bg-white rounded-lg text-sm md:text-base text-blue-500">

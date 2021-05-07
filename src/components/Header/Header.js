@@ -4,7 +4,8 @@ import LOGO from "src/assets/images/logo.png"
 
 export default function Header() {
   return (
-    <header >
+    <header  >
+      
       <div className='bg-white h-16 shadow py-2 px-4 z-10 w-full fixed'>
         <nav className='flex h-full items-center justify-between mx-auto max-w-screen-lg'>
           <div className="h-full flex items-center">
