@@ -15,6 +15,7 @@ export default function StudentEnglish({
                 <div className="text-xl text-center md:text-left">{studentName}</div>
                 {/* <audio controls style={{backgroundColor: '#f1f3f4', borederRadius: '1rem'}}> */}
                 <audio controls >
+                  <source src={studentAudio}></source>
                 </audio>
             </div>
         </div>
