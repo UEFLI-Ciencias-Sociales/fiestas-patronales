@@ -14,7 +14,7 @@ export default function Summary({showMoreInfo, handleShowMore, maxCharacters, su
         {summary}
       </div>
       <Button onClick={handleShowMore} className="ml-auto text-blue-500 hover:text-blue-400 transition-all p-0 text-sm">
-      {isTranslator ? showMoreInfo ? "Mostrar menos" : "Mostrar más" : showMoreInfo ? "Show less" : "Show more"}
+      {isTranslator ? showMoreInfo ? "Show less" : "Show more" : showMoreInfo ? "Mostrar menos" : "Mostrar más"}
       </Button>
     </div>
   );
