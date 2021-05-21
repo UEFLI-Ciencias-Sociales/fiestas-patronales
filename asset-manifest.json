@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/fiestas-patronales/static/css/main.f16aa140.chunk.css",
-    "main.js": "/fiestas-patronales/static/js/main.899f2ee4.chunk.js",
-    "main.js.map": "/fiestas-patronales/static/js/main.899f2ee4.chunk.js.map",
+    "main.css": "/fiestas-patronales/static/css/main.09f978a3.chunk.css",
+    "main.js": "/fiestas-patronales/static/js/main.62784c37.chunk.js",
+    "main.js.map": "/fiestas-patronales/static/js/main.62784c37.chunk.js.map",
     "runtime-main.js": "/fiestas-patronales/static/js/runtime-main.0ae471c6.js",
     "runtime-main.js.map": "/fiestas-patronales/static/js/runtime-main.0ae471c6.js.map",
     "static/js/2.676e3074.chunk.js": "/fiestas-patronales/static/js/2.676e3074.chunk.js",
     "static/js/2.676e3074.chunk.js.map": "/fiestas-patronales/static/js/2.676e3074.chunk.js.map",
     "index.html": "/fiestas-patronales/index.html",
-    "static/css/main.f16aa140.chunk.css.map": "/fiestas-patronales/static/css/main.f16aa140.chunk.css.map",
+    "static/css/main.09f978a3.chunk.css.map": "/fiestas-patronales/static/css/main.09f978a3.chunk.css.map",
     "static/js/2.676e3074.chunk.js.LICENSE.txt": "/fiestas-patronales/static/js/2.676e3074.chunk.js.LICENSE.txt",
     "static/media/AinhoaCatherineJiménezRojas_Paltas.a41cc063.jpeg": "/fiestas-patronales/static/media/AinhoaCatherineJiménezRojas_Paltas.a41cc063.jpeg",
     "static/media/AlinaBrigitteCeliCarrillo_Sozoranga.2c21787d.jpeg": "/fiestas-patronales/static/media/AlinaBrigitteCeliCarrillo_Sozoranga.2c21787d.jpeg",
@@ -49,7 +49,7 @@
   "entrypoints": [
     "static/js/runtime-main.0ae471c6.js",
     "static/js/2.676e3074.chunk.js",
-    "static/css/main.f16aa140.chunk.css",
-    "static/js/main.899f2ee4.chunk.js"
+    "static/css/main.09f978a3.chunk.css",
+    "static/js/main.62784c37.chunk.js"
   ]
 }
