@@ -28,6 +28,7 @@ export default function Quiz() {
         }))
       );
     }, 500);
+
   }, []);
 
   const handleAnswer = (answer, indicador) => {
@@ -37,7 +38,6 @@ export default function Quiz() {
       }
       setButtonSelect(undefined);
     }
-    console.log(alreadyIndexs)
     
     setShowAnswer(true);
     setButtonSelect(indicador);
@@ -76,13 +76,13 @@ export default function Quiz() {
       {endQuiz ? (
         <div>
           <div className="quiz-score">
-            Your score was {score}/{MAX_QUESTION}
+            Tu puntación es {score}/{MAX_QUESTION}
           </div>
           <Button onClick={resetQuiz} className="block w-full p-2 rounded-lg bg-white mb-4">
-            Reset
+            Reintentar
           </Button>
           <Link to='/' className="text-center block w-full p-2 rounded-lg bg-white">
-            Back to home
+            <div onClick={resetQuiz}>Volver al inicio</div>
           </Link>
         </div>
       ) : questions.length > 0 ? (
