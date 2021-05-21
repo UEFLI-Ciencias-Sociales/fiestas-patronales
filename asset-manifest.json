@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/fiestas-patronales/static/css/main.09f978a3.chunk.css",
-    "main.js": "/fiestas-patronales/static/js/main.62784c37.chunk.js",
-    "main.js.map": "/fiestas-patronales/static/js/main.62784c37.chunk.js.map",
+    "main.js": "/fiestas-patronales/static/js/main.1be4423d.chunk.js",
+    "main.js.map": "/fiestas-patronales/static/js/main.1be4423d.chunk.js.map",
     "runtime-main.js": "/fiestas-patronales/static/js/runtime-main.0ae471c6.js",
     "runtime-main.js.map": "/fiestas-patronales/static/js/runtime-main.0ae471c6.js.map",
-    "static/js/2.676e3074.chunk.js": "/fiestas-patronales/static/js/2.676e3074.chunk.js",
-    "static/js/2.676e3074.chunk.js.map": "/fiestas-patronales/static/js/2.676e3074.chunk.js.map",
+    "static/js/2.60374408.chunk.js": "/fiestas-patronales/static/js/2.60374408.chunk.js",
+    "static/js/2.60374408.chunk.js.map": "/fiestas-patronales/static/js/2.60374408.chunk.js.map",
     "index.html": "/fiestas-patronales/index.html",
     "static/css/main.09f978a3.chunk.css.map": "/fiestas-patronales/static/css/main.09f978a3.chunk.css.map",
-    "static/js/2.676e3074.chunk.js.LICENSE.txt": "/fiestas-patronales/static/js/2.676e3074.chunk.js.LICENSE.txt",
+    "static/js/2.60374408.chunk.js.LICENSE.txt": "/fiestas-patronales/static/js/2.60374408.chunk.js.LICENSE.txt",
     "static/media/AinhoaCatherineJiménezRojas_Paltas.a41cc063.jpeg": "/fiestas-patronales/static/media/AinhoaCatherineJiménezRojas_Paltas.a41cc063.jpeg",
     "static/media/AlinaBrigitteCeliCarrillo_Sozoranga.2c21787d.jpeg": "/fiestas-patronales/static/media/AlinaBrigitteCeliCarrillo_Sozoranga.2c21787d.jpeg",
     "static/media/AndreaPaulinaCastroVallejo_Loja.94f00b4e.jpeg": "/fiestas-patronales/static/media/AndreaPaulinaCastroVallejo_Loja.94f00b4e.jpeg",
@@ -48,8 +48,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0ae471c6.js",
-    "static/js/2.676e3074.chunk.js",
+    "static/js/2.60374408.chunk.js",
     "static/css/main.09f978a3.chunk.css",
-    "static/js/main.62784c37.chunk.js"
+    "static/js/main.1be4423d.chunk.js"
   ]
 }
