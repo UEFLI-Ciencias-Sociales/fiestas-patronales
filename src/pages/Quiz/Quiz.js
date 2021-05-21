@@ -81,8 +81,8 @@ export default function Quiz() {
           <Button onClick={resetQuiz} className="block w-full p-2 rounded-lg bg-white mb-4">
             Reintentar
           </Button>
-          <Link to='/' className="text-center block w-full p-2 rounded-lg bg-white">
-            <div onClick={resetQuiz}>Volver al inicio</div>
+          <Link to='/' onClick={resetQuiz} className="text-center block w-full p-2 rounded-lg bg-white">
+            Volver al inicio
           </Link>
         </div>
       ) : questions.length > 0 ? (
