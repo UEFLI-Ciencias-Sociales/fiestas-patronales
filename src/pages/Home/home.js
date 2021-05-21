@@ -20,6 +20,7 @@ export default function Home() {
           height="500px"
           title="Ñukanchik allpa"
           subTitle="Nuestra Tierra"
+          summit="Los cantones de la provincia de Loja"
         />
         <BackgroundBubbles className="container mx-auto px-4 z-1 relative z-1 pt-8 pb-16">
           {provinces.map(({ showDialog, dialog, ...province }, index) => {
