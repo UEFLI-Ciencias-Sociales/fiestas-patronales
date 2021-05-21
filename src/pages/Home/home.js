@@ -40,21 +40,21 @@ export default function Home() {
           })}
           <div className="mt-16 bg-white p-8 rounded-2xl shadow">
             <h2 className="text-center font-bold mb-8">
-              Conociendo la megadiversisdad y pluriculturalidad local
+              Conociendo la megadiversidad y pluriculturalidad local
             </h2>
             <div className="grid md:grid-cols-2 place-center gap-4 ">
               <div className="aspect-ratio-box">
                 <iframe
                   title="Video 1"
                   className="aspect-ratio-box-inside"
-                  src="https://drive.google.com/file/d/11M4l-Lg1SsgsNFVZzdwVwRV_rHZRQAqG/preview"
+                  src="https://www.youtube.com/embed/Y7NG9CqAuSs"
                 ></iframe>
               </div>
               <div className="aspect-ratio-box">
                 <iframe
                   title="Video 2"
                   className="aspect-ratio-box-inside"
-                  src="https://drive.google.com/file/d/1JGWREEZrex5KLdt4Do6OVEwKpZIOk_w8/preview"
+                  src="https://www.youtube.com/embed/14DU2RrAhws"
                 ></iframe>
               </div>
             </div>
