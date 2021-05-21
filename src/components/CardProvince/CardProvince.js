@@ -32,7 +32,7 @@ export default function DetailProvince({
       {console.log({studentImage, studentName,studentAudio})}
       <hr className='mb-4' />
       <StudentEnglish studentImage={studentImage} studentName={studentName} studentAudio={studentAudio}/>
-      <a href={path} className='rounded-lg px-4 btn-press text-center md:ml-auto py-2 text-white bg-blue-500 w-full md:w-auto md:inline-block'>
+      <a href={path} target='_blank' className='rounded-lg px-4 btn-press text-center md:ml-auto py-2 text-white bg-blue-500 w-full md:w-auto md:inline-block'>
         Ir al foro
         </a>
     </section>
