@@ -18,7 +18,8 @@ export default function Home() {
         <Hero
           background={BACKGROUND}
           height="500px"
-          title="Los cantones de la provincia de Loja"
+          title="Ñukanchik allpa"
+          subTitle="Nuestra Tierra"
         />
         <BackgroundBubbles className="container mx-auto px-4 z-1 relative z-1 pt-8 pb-16">
           {provinces.map(({ showDialog, dialog, ...province }, index) => {
