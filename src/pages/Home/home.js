@@ -24,7 +24,7 @@ export default function Home() {
         <BackgroundBubbles className="container mx-auto px-4 z-1 relative z-1 pt-8 pb-16">
           {provinces.map(({ showDialog, dialog, ...province }, index) => {
             return (
-              <div>
+              <div key={index}>
                 <CardProvince {...province} />
                 {showDialog && (
                   <HumanDialog
@@ -46,7 +46,6 @@ export default function Home() {
                 <iframe
                   title="Video 1"
                   className="aspect-ratio-box-inside"
-                  allowfullscreen
                   src="https://drive.google.com/file/d/11M4l-Lg1SsgsNFVZzdwVwRV_rHZRQAqG/preview"
                 ></iframe>
               </div>
@@ -54,7 +53,6 @@ export default function Home() {
                 <iframe
                   title="Video 2"
                   className="aspect-ratio-box-inside"
-                  allowfullscreen
                   src="https://drive.google.com/file/d/1JGWREEZrex5KLdt4Do6OVEwKpZIOk_w8/preview"
                 ></iframe>
               </div>

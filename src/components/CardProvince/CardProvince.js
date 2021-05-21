@@ -29,7 +29,6 @@ export default function DetailProvince({
         <PhotoProvince rightImage={rightImage} leftImage={leftImage} province={province} />
         <Summary showMoreInfo={showMoreInfo} handleShowMore={handleShowMore} summary={isTranslator ? summary.english : summary.spanish} />
       </article>
-      {console.log({studentImage, studentName,studentAudio})}
       <hr className='mb-4' />
       <StudentEnglish studentImage={studentImage} studentName={studentName} studentAudio={studentAudio}/>
       <a href={path} target='_blank' className='rounded-lg px-4 btn-press text-center md:ml-auto py-2 text-white bg-blue-500 w-full md:w-auto md:inline-block'>
