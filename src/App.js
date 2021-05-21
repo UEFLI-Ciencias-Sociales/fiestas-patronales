@@ -5,9 +5,11 @@ import { Route, Switch } from "react-router-dom";
 import { HashRouter as Router } from 'react-router-dom'
 import { TranslatorProvider } from 'src/context/TranslatorContext'
 
-export default () => <TranslatorProvider>
-  <App />
-</TranslatorProvider>
+export default () => (
+  <TranslatorProvider>
+    <App />
+  </TranslatorProvider>
+)
 
 function App() {  
   return (

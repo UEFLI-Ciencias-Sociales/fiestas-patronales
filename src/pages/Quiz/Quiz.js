@@ -63,8 +63,8 @@ export default function Quiz() {
     setCurrentIndex(newIndex);
 
     if (
-      alreadyIndexs.length > MAX_QUESTION ||
-      alreadyIndexs.length > questions.length
+      alreadyIndexs.length === MAX_QUESTION ||
+      alreadyIndexs.length === questions.length
     ) {
       setEndQuiz(true);
     }
