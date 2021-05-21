@@ -1,7 +1,8 @@
 import { Quiz } from "./pages/Quiz";
 import { Home } from "./pages/Home";
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import { HashRouter as Router } from 'react-router-dom'
 import { TranslatorProvider } from 'src/context/TranslatorContext'
 
 export default () => <TranslatorProvider>
@@ -10,7 +11,7 @@ export default () => <TranslatorProvider>
 
 function App() {  
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/">
           <Home />
