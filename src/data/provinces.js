@@ -44,7 +44,7 @@ const CELICA_IMAGE =
 const CHAGUARPAMBA_IMAGE =
   "https://www.turismo.gob.ec/wp-content/uploads/2020/08/57012606_1257375671083883_5056411581072539648_o.jpg";
 const EPINDOLA_IMAGE =
-  "https://lahora.com.ec/contenido/cache/48/espindola-confirma-casos-de-covid-19-imagen-1-_2020078102145-682x512.jpg";
+  "https://www.turismo.gob.ec/wp-content/uploads/2020/11/espindola1-1.jpg";
 const LOJA_IMAGE =
   "https://www.presidencia.gob.ec/wp-content/uploads/2017/11/Loja.jpg";
 const CATAMAYO_IMAGE =
