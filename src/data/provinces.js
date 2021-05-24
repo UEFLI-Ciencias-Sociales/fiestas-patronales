@@ -40,7 +40,7 @@ const GONZANAMA_IMAGE =
 const MACARA_IMAGE =
   "https://www.eltelegrafo.com.ec/media/k2/items/cache/5a5446717f3084461345c7151d7275bf_XL.jpg";
 const CELICA_IMAGE =
-  "https://lahora.com.ec/contenido/cache/50/celica-prepara-sus-fiestas-de-cantonizacion-imagen-1-_20181017062940-2000x2000.jpg";
+  "https://img.goraymi.com/2019/04/16/119e631cab598576e68fa688e2b5e79f_xl.jpg";
 const CHAGUARPAMBA_IMAGE =
   "https://www.turismo.gob.ec/wp-content/uploads/2020/08/57012606_1257375671083883_5056411581072539648_o.jpg";
 const EPINDOLA_IMAGE =
